@@ -1,0 +1,61 @@
+-----------
+Log Options
+-----------
+Verbose Off
+Timings Off
+PrincipalVariation Off
+------------
+Play Options
+------------
+ComputerWhite Off
+ComputerBlack On
+SearchMethod 0
+Level 4
+BaseMinutes 2
+Increment 12
+Time(permove) 2
+ChampionshipTime 600
+ChampionshipMoves 60
+OpeningLearning On
+Openings On
+InvertBoard On
+MinimumBookResults 20
+WhitePercent 40
+BlackPercent 25
+HashTableSize(K) 8000
+HashReadReduce 0
+HashWriteReduce 0
+QuiescenceDepth 50
+Contempt -75
+MaxExtensions 10
+RecaptureExtensions On
+CheckExtensions On
+PawnPushExtensions Off
+SingleReplyExtensions Off
+UseHistory Off
+RandomMoveOrdering Off
+FailHighReductions On
+NullMove On
+NullMoveReduceDepth 1
+NullMoveStopMaterial 1
+AspirationWindow 200
+Ponder Off
+MinimalWindow On
+AutoSave On
+Variant 1
+---------------
+Display Options
+---------------
+PieceSlide On
+AllMessages On
+ShowAnalysis On
+WhiteColour 0
+BlackColour -2
+BackgroundColour 2
+BackgroundStyle 1
+Chessboard 0
+Pieces 0
+AnalysisBoxColour 0
+MoveBoxColour 0
+AnalysisTextColour -4
+MoveBoxTextColour -4

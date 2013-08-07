@@ -1,0 +1,621 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "c:\bc45\include\windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "c:\bc45\include\bwcc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MENU_1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Game...\tCtrl+N",        CM_FILE_NEW_GAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Load Game...\tCtrl+L",       CM_FILE_LOAD_GAME
+        MENUITEM "&Save Game...\tCtrl+S",       CM_FILE_SAVE_GAME
+        MENUITEM "Save Game as PGN...",         CM_FILE_SAVE_PGN
+        MENUITEM SEPARATOR
+        MENUITEM "Load Position...",            CM_LOADPOSITION
+        MENUITEM "Save Position as FEN...",     CM_FILE_SAVE_POSITION
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       CM_FILEEXIT
+    END
+    POPUP "&Action"
+    BEGIN
+        MENUITEM "Take &Back Move\tLeft",       CM_ACTION_TAKE_BACK_ONE
+        MENUITEM "&Replay Move\tRight",         CM_ACTION_REPLAY_ONE
+        MENUITEM SEPARATOR
+        MENUITEM "Take Back &All\tCtrl+Left",   CM_ACTION_TAKE_BACK_ALL
+        MENUITEM "R&eplay All\tCtrl+Right",     CM_ACTION_REPLAY_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Resign...",                   CM_RESIGN
+        MENUITEM "Offer draw...",               CM_OFFERDRAW
+        MENUITEM SEPARATOR
+        MENUITEM "Pla&y Best\tEnter",           CM_ACTION_PLAY_BEST
+        MENUITEM "&Stop Search\tEsc",           CM_ACTION_STOP_SEARCH
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Piece &Slide",                CM_OPTIONS_PIECE_SLIDE
+        MENUITEM "Show All &Messages",          CM_OPTIONS_MESSAGES
+        MENUITEM "Show &Analysis",              CM_OPTIONS_SHOW_ANALYSIS
+        MENUITEM "&Autosave",                   CM_FILE_AUTOSAVE
+        MENUITEM "Auto Flag",                   CM_FLAG
+        MENUITEM SEPARATOR
+        MENUITEM "Computer Plays &White\tCtrl+W", CM_OPTIONS_COMPUTER_WHITE
+        MENUITEM "Computer Plays &Black\tCtrl+B", CM_OPTIONS_COMPUTER_BLACK
+        MENUITEM "Switch S&ides\tCtrl+S",       CM_OPTIONS_SWITCH_SIDES
+        MENUITEM SEPARATOR
+        MENUITEM "Computer Play &Options...\tCtrl+O", 
+                                                CM_OPTIONS_COMPUTER_PLAY_OPTIONS
+
+        MENUITEM SEPARATOR
+        MENUITEM "Sa&ve Options",               CM_OPTIONS_SAVE_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Restore Defaults",           CM_DEFAULT_OPTIONS
+    END
+    POPUP "&Display"
+    BEGIN
+        MENUITEM "Change &Pieces",              CM_CHANGE_PIECES
+        MENUITEM "Change Chess&board",          CM_CHANGE_CHESSBOARD
+        MENUITEM "Change Back&ground Style",    CM_CHANGE_BACKGROUND_STYLE
+        MENUITEM SEPARATOR
+        MENUITEM "Change &White Colour",        CM_CHANGE_WHITE_COLOUR
+        MENUITEM "Change &Black Colour",        CM_CHANGE_BLACK_COLOUR
+        MENUITEM "Change &Analysis Box Colour", CM_CHANGE_BOX_STYLE
+        MENUITEM "Change &Move Box Colour",     CM_CHANGE_MOVEBOX_STYLE
+        MENUITEM "Change Backgr&ound Colour",   CM_CHANGE_BACKGROUND_COLOUR
+        MENUITEM "Change A&nalysis Text",       CM_CHANGE_ANALYSIS_TEXT
+        MENUITEM "Change Mo&ve Text",           CM_CHANGE_MOVE_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Default Style",              CM_DEFAULT_STYLE_1
+    END
+    POPUP "&Logs"
+    BEGIN
+        MENUITEM "&Verbose",                    CM_LOGS_VERBOSE
+        MENUITEM "&Timings",                    CM_LOGS_TIMINGS
+        MENUITEM "&Principal Variation",        CM_LOGS_PV
+    END
+    POPUP "&Variants"
+    BEGIN
+        MENUITEM "&Chess",                      CM_VCHESS
+        MENUITEM "&Shatranj",                   CM_VSHATRANJ
+        MENUITEM "&Kinglet",                    CM_VKINGLET
+        MENUITEM "Self-&Take",                  CM_VSELFTAKE
+    END
+    POPUP "&Special"
+    BEGIN
+        MENUITEM "&Setup Board...",             CM_SETUP_BOARD
+        MENUITEM SEPARATOR
+        MENUITEM "&Analyse Winboard Log...",    CM_SPECIALANALYSE_PGN_FILE
+        MENUITEM SEPARATOR
+        MENUITEM "S&olve for mate",             CM_SOLVEFORMATE
+        MENUITEM SEPARATOR
+        MENUITEM "Create Opening Book...",      CM_CREATEOPENINGBOOK
+        MENUITEM SEPARATOR
+        MENUITEM "Run Test Suite...",           CM_TESTSUITE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents",                   CM_HELP_CONTENTS
+        MENUITEM "&About...",                   CM_HELP_ABOUT
+    END
+END
+
+SETUP_MENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "White Pawn",                  CM_WHITE_PAWN
+    MENUITEM "White Knight",                CM_WHITE_KNIGHT
+    MENUITEM "White Bishop",                CM_WHITE_BISHOP
+    MENUITEM "White Rook",                  CM_WHITE_ROOK
+    MENUITEM "White Queen",                 CM_WHITE_QUEEN
+    MENUITEM "White King",                  CM_WHITE_KING
+    MENUITEM SEPARATOR
+    MENUITEM "Black Pawn",                  CM_BLACK_PAWN
+    MENUITEM "Black Knight",                CM_BLACK_KNIGHT
+    MENUITEM "Black Bishop",                CM_BLACK_BISHOP
+    MENUITEM "Black Rook",                  CM_BLACK_ROOK
+    MENUITEM "Black Queen",                 CM_BLACK_QUEEN
+    MENUITEM "Black King",                  CM_BLACK_KING
+    MENUITEM SEPARATOR
+    MENUITEM "Clear Square",                CM_CLEAR_SQUARE
+    MENUITEM SEPARATOR
+    MENUITEM "Clear Board",                 CM_CLEAR_BOARD
+    MENUITEM SEPARATOR
+    MENUITEM "Exit Setup",                  CM_EXIT_SETUP
+    MENUITEM "Abort Setup",                 CM_ABORT_SETUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+KING3                   BITMAP  MOVEABLE PURE   "king3.bmp"
+QUEEN3                  BITMAP  MOVEABLE PURE   "queen3.bmp"
+BISHOP3                 BITMAP  MOVEABLE PURE   "bishop3.bmp"
+ROOK3                   BITMAP  MOVEABLE PURE   "rook3.bmp"
+KNIGHT3                 BITMAP  MOVEABLE PURE   "knight3.bmp"
+PAWN3                   BITMAP  MOVEABLE PURE   "pawn3.bmp"
+KING1                   BITMAP  MOVEABLE PURE   "king1.bmp"
+QUEEN1                  BITMAP  MOVEABLE PURE   "queen1.bmp"
+BISHOP1                 BITMAP  MOVEABLE PURE   "bishop1.bmp"
+ROOK1                   BITMAP  MOVEABLE PURE   "rook1.bmp"
+KNIGHT1                 BITMAP  MOVEABLE PURE   "knight1.bmp"
+PAWN1                   BITMAP  MOVEABLE PURE   "pawn1.bmp"
+WHITE1                  BITMAP  MOVEABLE PURE   "white1.bmp"
+BLACK1                  BITMAP  MOVEABLE PURE   "black1.bmp"
+ZERO                    BITMAP  MOVEABLE PURE   "0.bmp"
+ONE                     BITMAP  MOVEABLE PURE   "1.bmp"
+TWO                     BITMAP  MOVEABLE PURE   "2.bmp"
+THREE                   BITMAP  MOVEABLE PURE   "3.bmp"
+FOUR                    BITMAP  MOVEABLE PURE   "4.bmp"
+FIVE                    BITMAP  MOVEABLE PURE   "5.bmp"
+SIX                     BITMAP  MOVEABLE PURE   "6.bmp"
+SEVEN                   BITMAP  MOVEABLE PURE   "7.bmp"
+EIGHT                   BITMAP  MOVEABLE PURE   "8.bmp"
+NINE                    BITMAP  MOVEABLE PURE   "9.bmp"
+COLON                   BITMAP  MOVEABLE PURE   "colon.bmp"
+PATHNUM4                BITMAP  MOVEABLE PURE   "pathnum4.bmp"
+PATHNUM5                BITMAP  MOVEABLE PURE   "pathnum5.bmp"
+PATHNUM6                BITMAP  MOVEABLE PURE   "pathnum6.bmp"
+PATHNUM7                BITMAP  MOVEABLE PURE   "pathnum7.bmp"
+PATHNUM8                BITMAP  MOVEABLE PURE   "pathnum8.bmp"
+PATHNUMA                BITMAP  MOVEABLE PURE   "pathnuma.bmp"
+PATHNUMB                BITMAP  MOVEABLE PURE   "pathnumb.bmp"
+PATHNUMC                BITMAP  MOVEABLE PURE   "pathnumc.bmp"
+PATHNUMD                BITMAP  MOVEABLE PURE   "pathnumd.bmp"
+PATHNUME                BITMAP  MOVEABLE PURE   "pathnume.bmp"
+PATHNUMF                BITMAP  MOVEABLE PURE   "pathnumf.bmp"
+PATHNUMG                BITMAP  MOVEABLE PURE   "pathnumg.bmp"
+PATHNUMH                BITMAP  MOVEABLE PURE   "pathnumh.bmp"
+PATHNUM1                BITMAP  MOVEABLE PURE   "pathnum1.bmp"
+PATHNUM2                BITMAP  MOVEABLE PURE   "pathnum2.bmp"
+PATHNUM3                BITMAP  MOVEABLE PURE   "pathnum3.bmp"
+ANALYSISBOX             BITMAP  MOVEABLE PURE   "analwin.bmp"
+PATHNUM0                BITMAP  MOVEABLE PURE   "pathnum0.bmp"
+PATHNUM9                BITMAP  MOVEABLE PURE   "pathnum9.bmp"
+PATHCROSS               BITMAP  MOVEABLE PURE   "pathcros.bmp"
+PATHDASH                BITMAP  MOVEABLE PURE   "pathdash.bmp"
+PATHDOT                 BITMAP  MOVEABLE PURE   "pathdot.bmp"
+BACK1                   BITMAP  MOVEABLE PURE   "rivbak.bmp"
+MOVEBOX                 BITMAP  MOVEABLE PURE   "movebox.bmp"
+WHITE2                  BITMAP  MOVEABLE PURE   "white2.bmp"
+WHITE3                  BITMAP  MOVEABLE PURE   "white3.bmp"
+BLACK2                  BITMAP  MOVEABLE PURE   "black2.bmp"
+BLACK3                  BITMAP  MOVEABLE PURE   "black3.bmp"
+BACK2                   BITMAP  MOVEABLE PURE   "rivbak2.bmp"
+PAWN2                   BITMAP  MOVEABLE PURE   "pawn2.bmp"
+BISHOP2                 BITMAP  MOVEABLE PURE   "bishop2.bmp"
+ROOK2                   BITMAP  MOVEABLE PURE   "rook2.bmp"
+KING2                   BITMAP  MOVEABLE PURE   "king2.bmp"
+KNIGHT2                 BITMAP  MOVEABLE PURE   "knight2.bmp"
+QUEEN2                  BITMAP  MOVEABLE PURE   "queen2.bmp"
+PATHMATE                BITMAP  MOVEABLE PURE   "mate.bmp"
+PATHBISHOP              BITMAP  MOVEABLE PURE   "pathbish.bmp"
+PATHKING                BITMAP  MOVEABLE PURE   "pathking.bmp"
+PATHKNIGHT              BITMAP  MOVEABLE PURE   "pathknig.bmp"
+PATHM                   BITMAP  MOVEABLE PURE   "pathmate.bmp"
+PATHQUEEN               BITMAP  MOVEABLE PURE   "pathquee.bmp"
+PATHROOK                BITMAP  MOVEABLE PURE   "pathrook.bmp"
+PATHEQUALS              BITMAP  DISCARDABLE     "pathequa.bmp"
+PATHPLUS                BITMAP  DISCARDABLE     "pathplus.bmp"
+ANALYSISBOX2            BITMAP  DISCARDABLE     "ANALWIN2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+COMPUTER_OPTIONS_DIALOG DIALOGEX 10, 10, 238, 222
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Computer Play Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Base/Increment",IDC_BASEINCREMENT,"Button",
+                    BS_AUTORADIOBUTTON,10,72,63,12
+    CONTROL         "Championship",IDC_CHAMPIONSHIP,"Button",
+                    BS_AUTORADIOBUTTON,10,52,61,12
+    CONTROL         "Ply Depth",IDC_FIXEDLEVEL,"Button",BS_AUTORADIOBUTTON,
+                    10,12,60,12,WS_EX_TRANSPARENT
+    CONTROL         "Time Per Move",IDC_TIMEPERMOVE,"Button",
+                    BS_AUTORADIOBUTTON,10,32,60,12
+    LTEXT           "Start with",IDC_STATIC,97,74,33,8,NOT WS_GROUP
+    EDITTEXT        IDC_TIMEHOUR,100,32,15,12
+    EDITTEXT        IDC_TIMEMINUTE,127,32,15,12
+    EDITTEXT        IDC_TIMESECONDS,155,32,15,12
+    EDITTEXT        IDC_CHAMPMINUTE,176,51,15,12
+    EDITTEXT        IDC_CHAMPHOUR,149,51,15,12
+    LTEXT           "Moves in",IDC_STATIC,117,53,30,8,NOT WS_GROUP
+    EDITTEXT        IDC_CHAMPMOVES,100,51,15,12
+    DEFPUSHBUTTON   "OK",IDOK,64,195,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,195,50,14
+    COMBOBOX        IDC_LEVEL,100,12,36,81,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "H",IDC_STATIC,116,34,10,8,NOT WS_GROUP
+    LTEXT           "M",IDC_STATIC,143,34,10,8,NOT WS_GROUP
+    LTEXT           "S",IDC_STATIC,172,34,10,8,NOT WS_GROUP
+    EDITTEXT        IDC_CHAMPSECOND,204,51,15,12
+    LTEXT           "H",IDC_STATIC,165,53,10,8,NOT WS_GROUP
+    LTEXT           "M",IDC_STATIC,192,53,10,8,NOT WS_GROUP
+    LTEXT           "S",IDC_STATIC,221,53,8,8,NOT WS_GROUP
+    PUSHBUTTON      "Advanced Options...",IDC_ADVANCED_BUTTON,136,173,86,14
+    EDITTEXT        IDC_BASEMINUTES,132,72,15,12
+    LTEXT           "m, add",IDC_STATIC,151,73,24,8,NOT WS_GROUP
+    LTEXT           "s per move",IDC_STATIC,192,73,37,8,NOT WS_GROUP
+    EDITTEXT        IDC_INCREMENT,175,72,15,12
+    CONTROL         "Infinite",IDC_INFINITE,"Button",BS_AUTORADIOBUTTON,10,
+                    92,60,12
+    LTEXT           "Computer will play until user interupts or it has seen 25 full moves ahead.",
+                    IDC_STATIC,98,89,129,17,NOT WS_GROUP
+    CONTROL         "Use Opening Library",IDC_USELIBRARY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,119,87,10
+    EDITTEXT        IDC_WHITEPERCENT,158,153,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MINRESULTS,182,136,28,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLACKPERCENT,190,153,20,14,ES_AUTOHSCROLL
+    LTEXT           "Opening Percent (White/Black)",IDC_STATIC,14,157,100,8
+    LTEXT           "Minimum Results before applying percentages",IDC_STATIC,
+                    13,139,145,8
+END
+
+ADVANCED_COMPUTER_OPTIONS_DIALOG DIALOGEX 5, 5, 278, 191
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Advanced Computer Play Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,83,167,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,167,50,14
+    EDITTEXT        IDC_QUIESCE,122,130,14,12
+    LTEXT           "Maximum Quiescence Depth",IDC_HASHSIZE,12,131,94,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Contempt",IDC_HASHSIZE,12,146,60,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_CONTEMPT,122,144,21,12
+    CONTROL         "Opening Learning",IDC_TRANSREF,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,4,72,10
+    CONTROL         "Minimal Window",IDC_MINWIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,44,67,10
+    CONTROL         "Null Move",IDC_NULLMOVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,18,48,10
+    CONTROL         "Ponder Next Move",IDC_PONDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,31,75,10
+    LTEXT           "Hash Table Size (K)",IDC_HASHSIZE,12,116,64,8
+    EDITTEXT        IDC_HASHMEGS,122,115,35,12,ES_AUTOHSCROLL
+    CONTROL         "Recapture Extensions",IDC_RECAPTUREEXT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,98,18,85,10
+    CONTROL         "Check Extensions",IDC_CHECKEXT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,98,31,73,10
+    CONTROL         "Pawn Push Extensions",IDC_PAWNPUSHEXT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,98,4,88,10
+    EDITTEXT        IDC_NULLMOVEREDUCE,122,100,14,12,ES_AUTOHSCROLL
+    LTEXT           "Null Move Reduce Depth",IDC_HASHSIZE,12,101,82,8
+    LTEXT           "Aspiration Window (100=Pawn)",IDC_ASPTEXT,12,87,100,8
+    EDITTEXT        IDC_ASPIRATION,122,86,36,12,ES_AUTOHSCROLL
+    LTEXT           "Max Extensions",IDC_ASPTEXT2,12,73,50,8
+    EDITTEXT        IDC_MAXEXTEND,122,71,14,12,ES_AUTOHSCROLL
+    LTEXT           "Null Move Stop Pieces",IDC_HASHSIZE,166,102,73,8
+    EDITTEXT        IDC_NULLMOVEPIECES,243,100,15,12
+    LTEXT           "Read Hash Reduce",IDC_HASHSIZE,165,117,64,8,WS_DISABLED
+    LTEXT           "Write Hash Reduce",IDC_HASHSIZE,165,131,64,8,
+                    WS_DISABLED
+    EDITTEXT        IDC_READHASH,243,115,15,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_WRITEHASH,243,130,15,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Single Reply Extensions",IDC_SINGLEMOVEEXT,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,98,43,91,10
+    CONTROL         "History",IDC_USEHISTORY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,196,4,37,10
+    CONTROL         "Two Level Hash",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,196,18,68,10
+    CONTROL         "Node count hash resolution",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,11,57,103,10
+    CONTROL         "Random Ordering",IDC_RANDOMORDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,196,31,71,10
+END
+
+NEWGAMEDIALOG DIALOG DISCARDABLE  10, 10, 194, 119
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Start a new game"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,42,96,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,102,96,50,14
+    CONTROL         "Regular Chess Rules",IDC_REGULAR,"Button",
+                    BS_AUTORADIOBUTTON,24,31,83,12
+    CONTROL         "Kinglet",IDC_KINGLET,"Button",BS_AUTORADIOBUTTON,122,31,
+                    60,12
+    CONTROL         "Shatranj",IDC_SHATRANJ,"Button",BS_AUTORADIOBUTTON,24,
+                    53,60,12
+    CONTROL         "Self Take",IDC_SELFTAKE,"Button",BS_AUTORADIOBUTTON,122,
+                    52,60,12
+END
+
+ABOUT DIALOG DISCARDABLE  31, 21, 194, 143
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About Rival Chess for Windows"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,72,116,50,14
+    LTEXT           "Rival Chess For Windows (32 bit)",IDC_STATIC,43,8,107,8
+    LTEXT           "Chris Moreton",IDC_STATIC,73,22,48,8
+    LTEXT           "Graphics by",IDC_STATIC,76,51,41,8
+	 LTEXT           "Russell Newman",IDC_STATIC,68,61,58,8
+	 LTEXT           "chris@chrismo.com",IDC_STATIC,64,34,101,8
+	 LTEXT           "http://www.chrismo.com/chess",
+						  IDC_STATIC,50,98,148,8
+	 LTEXT           "Information and source code available from:",IDC_STATIC,
+						  32,81,138,8
+END
+
+SETUP_DIALOG DIALOG DISCARDABLE  10, 10, 215, 210
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Setup Board"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Chess",IDC_SETUPREGULAR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,15,15,32,12
+    CONTROL         "Kinglet",IDC_SETUPKINGLET,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,56,15,37,12
+    CONTROL         "Shatranj",IDC_SETUPSHATRANJ,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,98,15,40,12
+    CONTROL         "Self Take",IDC_SETUPSELFTAKE,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,144,15,46,12
+    DEFPUSHBUTTON   "OK",IDOK,52,190,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,112,190,50,14
+    LTEXT           "Which of the following pieces have moved?",-1,19,70,147,
+                    8
+    LTEXT           "If an en passant pawn capture is available, on which file is the pawn that was just moved, (0 for none)?",
+                    -1,15,140,170,18,NOT WS_GROUP
+    EDITTEXT        IDC_ENPASSANT,192,143,9,12
+    GROUPBOX        "Game Rules",IDC_GROUPBOX1,3,3,207,27
+    LTEXT           "How many half-moves have there been since the last capture or pawn move?",
+                    -1,12,167,168,18,NOT WS_GROUP
+    EDITTEXT        IDC_FIFTYMOVES,187,169,16,12
+    CONTROL         "White To Move",IDC_WHITE_TO_MOVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,42,65,10
+    CONTROL         "White King",IDC_WHITE_KING_MOVED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,94,51,10
+    CONTROL         "Black King",IDC_BLACK_KING_MOVED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,112,50,10
+    CONTROL         "Queen's Rook",IDC_WHITE_ROOK_1_MOVED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,74,94,61,10
+    CONTROL         "Queen's Rook",IDC_BLACK_ROOK_1_MOVED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,73,112,61,10
+    CONTROL         "King's Rook",IDC_WHITE_ROOK_8_MOVED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,145,94,54,10
+    CONTROL         "King's Rook",IDC_BLACK_ROOK_8_MOVED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,145,110,54,10
+END
+
+PROMOTE_DIALOG DIALOG DISCARDABLE  10, 10, 85, 119
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Promote To"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,96,50,14
+    CONTROL         "Queen",IDC_PROMOTEQUEEN,"Button",BS_AUTORADIOBUTTON,12,
+                    12,60,12
+    CONTROL         "Bishop",IDC_PROMOTEBISHOP,"Button",BS_AUTORADIOBUTTON,
+                    12,48,60,12
+    CONTROL         "Rook",IDC_PROMOTEROOK,"Button",BS_AUTORADIOBUTTON,12,30,
+                    60,12
+    CONTROL         "Knight",IDC_PROMOTEKNIGHT,"Button",BS_AUTORADIOBUTTON,
+                    12,65,60,12
+END
+
+IDC_SETUPMETHOD DIALOG DISCARDABLE  10, 10, 267, 111
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Setup Position"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FENEDIT,4,62,260,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,91,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,138,91,50,14
+    CONTROL         "Visual Setup",IDC_VISUAL,"Button",BS_AUTORADIOBUTTON,92,
+                    17,60,12
+    CONTROL         "Enter FEN Position",IDC_FEN,"Button",BS_AUTORADIOBUTTON,
+                    92,37,82,12
+END
+
+IDC_OPENINGBOOK DIALOGEX 10, 10, 188, 178
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Opening Book"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,32,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,156,50,14
+    EDITTEXT        IDC_MAXOPENINGPLY,121,14,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MINOPENINGPERCENT,121,33,32,14,ES_AUTOHSCROLL
+    LTEXT           "Maximum ply:",IDC_MAXPLYSTATIC,65,16,43,8,0,WS_EX_RIGHT
+    LTEXT           "Maximum number of positions:",IDC_STATIC,14,37,95,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "Include unknown results",IDC_INCLUDEUNKNOWN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,95,93,10
+    LTEXT           "Minimum results per position:",IDC_STATIC,20,56,90,8
+    EDITTEXT        IDC_MINOPENINGRESULTS,121,53,21,14,ES_AUTOHSCROLL
+    CONTROL         "Count games before generating",IDC_OPENINGCOUNT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,111,115,10
+    LTEXT           "Win Percentage (White/Black):",IDC_STATIC,15,76,100,8
+    EDITTEXT        IDC_WINPERCENT,121,73,22,14,ES_AUTOHSCROLL
+    CONTROL         "Quit On Error (else errors stored in create.log)",
+                    IDC_QUITONERROR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,
+                    126,157,10
+    EDITTEXT        IDC_WINPERCENTBLACK,152,73,21,14,ES_AUTOHSCROLL
+END
+
+IDC_SAVEPGN DIALOG DISCARDABLE  0, 0, 186, 79
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save PGN"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PGNEVENT,39,32,136,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,58,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,58,50,14
+    LTEXT           "Event:",IDC_STATIC,9,35,22,8
+    CONTROL         "Append",IDC_APPENDPGN,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,7,15,41,10
+END
+
+IDC_TESTSUITE DIALOG DISCARDABLE  10, 10, 186, 95
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Run EPD Suite"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,74,50,14
+    EDITTEXT        IDC_SUITETIME,114,33,40,14
+    EDITTEXT        IDC_SUITEDEPTH,138,14,16,14
+    LTEXT           "Max Depth",IDC_STATIC,99,16,36,8
+    LTEXT           "Max seconds per Position",IDC_STATIC,25,36,82,8
+    CONTROL         "Exit as soon as found (complete iteration)",
+                    IDC_EXITWHENFOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    26,54,145,10
+    EDITTEXT        IDC_SUITESTARTDEPTH,71,14,15,14,ES_AUTOHSCROLL
+    LTEXT           "Start Depth",IDC_STATIC,23,17,37,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+ID_MENU_1_ACCELERATORS ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "B",            CM_OPTIONS_COMPUTER_BLACK, VIRTKEY, CONTROL, NOINVERT
+    "L",            CM_FILE_LOAD_GAME,      VIRTKEY, NOINVERT
+    "N",            CM_FILE_NEW_GAME,       VIRTKEY, NOINVERT
+    "O",            CM_OPTIONS_COMPUTER_PLAY_OPTIONS, VIRTKEY, NOINVERT
+    "S",            CM_FILE_SAVE_GAME,      VIRTKEY, NOINVERT
+    "S",            CM_OPTIONS_SWITCH_SIDES, VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      CM_ACTION_STOP_SEARCH,  VIRTKEY, NOINVERT
+    VK_LEFT,        CM_ACTION_TAKE_BACK_ONE, VIRTKEY, NOINVERT
+    VK_LEFT,        CM_ACTION_TAKE_BACK_ALL, VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      CM_ACTION_PLAY_BEST,    VIRTKEY, NOINVERT
+    VK_RIGHT,       CM_ACTION_REPLAY_ONE,   VIRTKEY, NOINVERT
+    VK_RIGHT,       CM_ACTION_REPLAY_ALL,   VIRTKEY, CONTROL, NOINVERT
+    "W",            CM_OPTIONS_COMPUTER_WHITE, VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""c:\\bc45\\include\\bwcc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    ADVANCED_COMPUTER_OPTIONS_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 275
+        BOTTOMMARGIN, 180
+    END
+
+    IDC_OPENINGBOOK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDC_SAVEPGN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDC_TESTSUITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICONKING            ICON    DISCARDABLE     "icon1.ico"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
